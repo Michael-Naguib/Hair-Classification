@@ -52,7 +52,7 @@ Pixel colors were then extracted from these images and put in their respective c
 
 
 ## Technical Notes
-- ```Cair-Classification.ipynb``` contains the classification code and can be extended to classify any hair color by adding the appropiate data & folders
+- ```Hair-Classification.ipynb``` contains the classification code and can be extended to classify any hair color by adding the appropiate data & folders
 - The folders ```black```, ```blond```, etc contain images that are used to generate the training data for the classification code. The names of these folders and which color they represent are specified in the code. 
 - (hence you could add a color to the classification by creating a new folder that is the color name then specifying the approtiate data in the classification code)
 
