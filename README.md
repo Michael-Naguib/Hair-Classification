@@ -16,16 +16,17 @@ For nearly all of the Fall 2020 Semester, Several of my friends have been arguin
 ## Training Data
 Training data consisted of several components
 - 1) Manually Entered Data for colors: For this part of the data colors were manually input into arrays corresponding to their classification. Colors were taken from various 3rd party online sources which stated the classification of various RGB colors.
+
 ![Manual Data Blond](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/MBlond.PNG "Manual Data Blond")
 ![Manual Data Brown](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/MBrown.PNG "Manual Data Brown")
 etc... for the other colors
 
 - 2) The two parties with stake in the outcome were asked to blindly (with respect to the algorithm) submit several examples of what they each consider brown and blond hair etc... some examples are provided below
-<br>
-![example](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/brown/brown234643.PNG "example")
-![example](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/blond/blond1.PNG "example")
-<br>
-Pixel colors were then extracted from these images and put in their respective categories
+
+![example brown](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/brown/brown234643.PNG "example brown")
+![example blond](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/blond/blond1.PNG "example blond")
+
+- Pixel colors were then extracted from these images and put in their respective categories
 - All colors were converted to HLS and shuffled
 - Colors were considered without regard to count in the training data: i.e the data under-went a preprocessing step where duplicates were removed **HOWEVER** if a color was in both classification categories it was considered valid (both classifications claim that color = null effect in Target classification as described below)
 - Due to the fact that the algorithm is density sensitive and that it was noticed that the generated training dataset was skewed in the theoretical sense that simply there exist more blond colors than brown and more black colors than the both of those, the sets contining the HLS values for each of the classifications was randomly sampled according to the lowest unique color count. 
