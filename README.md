@@ -27,7 +27,7 @@ Pixel colors were then extracted from these images and put in their respective c
 - All colors were converted to HLS and shuffled
 - Colors were considered without regard to count in the training data: i.e the data under-went a preprocessing step where duplicates were removed **HOWEVER** if a color was in both classification categories it was considered valid (both classifications claim that color = null effect in Target classification as described below)
 - Due to the fact that the algorithm is density sensitive and that it was noticed that the generated training dataset was skewed in the theoretical sense that simply there exist more blond colors than brown and more black colors than the both of those, the sets contining the HLS values for each of the classifications was randomly sampled according to the lowest unique color count. 
-- The final Dataset can be visualized in HLS Space
+- The final Dataset can be visualized in HLS Space 
 ![Dataset HLS](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/DatasetInHLSspace.PNG "Dataset HLS")
 
 
