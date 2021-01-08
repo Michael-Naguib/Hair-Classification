@@ -21,8 +21,10 @@ Training data consisted of several components
 etc... for the other colors
 
 - 2) The two parties with stake in the outcome were asked to blindly (with respect to the algorithm) submit several examples of what they each consider brown and blond hair etc... some examples are provided below
+<br>
 ![example](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/brown/brown234643.PNG "example")
 ![example](https://raw.githubusercontent.com/Michael-Naguib/Hair-Classification/main/blond/blond1.PNG "example")
+<br>
 Pixel colors were then extracted from these images and put in their respective categories
 - All colors were converted to HLS and shuffled
 - Colors were considered without regard to count in the training data: i.e the data under-went a preprocessing step where duplicates were removed **HOWEVER** if a color was in both classification categories it was considered valid (both classifications claim that color = null effect in Target classification as described below)
